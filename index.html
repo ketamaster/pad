@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUERTE CABA | PAD</title>
+    <link rel="icon" href="./img/logo.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="form">
+        <div class="form-name">
+          <label for="name">TITULAR:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Escriba el titular"
+          />
+        </div>
+        <div class="form-number">
+          <label for="number">NUMERO:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Escriba el número"
+          />
+        </div>
+        <div class="form-alias">
+          <label for="alias">ALIAS:</label>
+          <input
+            type="text"
+            name="alias"
+            id="alias"
+            placeholder="Escriba el alias"
+          />
+        </div>
+        <div>
+          <button class="form-button" id="formButton">CARGAR INFO</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="pad-container">
+        <textarea class="txtArea" id="cbuxl" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('cbuxl')">
+          CBU COMPLETO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="cbu" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('cbu')">
+          CBU
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="registrar" cols="1" rows="1"></textarea>
+
+        <button id="pad-button-reg">REGISTRAR USUARIO</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="modal-form">
+              <label for="usuario" class="modal-label"
+                >NOMBRE DEL USUARIO</label
+              >
+              <input
+                type="text"
+                name="usuario"
+                id="usuario"
+                class="modal-input"
+                placeholder="Escriba el usuario"
+              />
+              <input
+                type="submit"
+                value="REGISTRAR"
+                class="modal-button"
+                id="modal-button"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="nombreCompleto" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('nombreCompleto')">
+          NOMBRE COMPLETO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="info" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('info')">
+          INFO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="retirar" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('retirar')">
+          RETIRAR
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="exitos" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('exitos')">
+          ÉXITO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="felicitar" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('felicitar')">
+          FELICITAR
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="cuentaBanco" cols="1" rows="1"></textarea>
+        <button
+          class="pad-button"
+          onclick="copiarAlPortapapeles('cuentaBanco')"
+        >
+          CUENTA BANCO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="noIngreso" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('noIngreso')">
+          NO INGRESO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="mercadoPago" cols="1" rows="1"></textarea>
+        <button
+          class="pad-button"
+          onclick="copiarAlPortapapeles('mercadoPago')"
+        >
+          MERCADO PAGO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="pdf" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('pdf')">
+          PDF
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="solicitoUsuario" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('solicitoUsuario')">
+          SOLICITO USUARIO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="cbuEquivocado" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('cbuEquivocado')">
+          CBU EQUIVOCADO
+        </button>
+      </div>
+
+      <div class="pad-container">
+        <textarea class="txtArea" id="ordenLlegada" cols="1" rows="1"></textarea>
+        <button class="pad-button" onclick="copiarAlPortapapeles('ordenLlegada')">
+          ORDEN DE LLEGADA
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
